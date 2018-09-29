@@ -1,5 +1,8 @@
 <?php
-
+/**
+ 
+ * @package  
+ */
 
 get_header(); ?>
 
@@ -13,12 +16,13 @@ get_header(); ?>
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
-			</header>
+			</header> 
 
-			<?php?>
+			<?php  ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
+ 
 					get_template_part( 'content', get_post_format() );
 				?>
 
@@ -32,8 +36,8 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		</main>
-	</div>
+		</main> 
+	</div> 
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

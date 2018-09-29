@@ -1,5 +1,8 @@
 <?php
-
+/**
+ 
+ * @package  
+ */
 
 get_header(); ?>
 
@@ -11,7 +14,7 @@ get_header(); ?>
 				<?php get_template_part( 'content', 'page' ); ?>
 
 				<?php
-					
+	 
 					if ( comments_open() || get_comments_number() ) :
 						comments_template();
 					endif;
@@ -19,8 +22,8 @@ get_header(); ?>
 
 			<?php endwhile;  ?>
 
-		</main>
-	</div>
+		</main> 
+	</div> 
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

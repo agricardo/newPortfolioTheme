@@ -1,5 +1,5 @@
 <?php
-
+ 
 
 get_header(); ?>
 
@@ -17,7 +17,7 @@ get_header(); ?>
 				<div class="header-image" style="background-image: url('<?php echo $image_url[0]; ?>');"></div>
 				<?php } ?>
 				
-			<?php endwhile; ?>
+			<?php endwhile;  ?>
 <div class="portfolio-area">			
 			<?php 
 			$project_type_terms = get_terms( 'jetpack-portfolio-type' );

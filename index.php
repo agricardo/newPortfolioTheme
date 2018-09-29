@@ -1,5 +1,8 @@
 <?php
-
+/**
+ 
+ * @package  
+ */
 
 get_header(); ?>
 
@@ -8,11 +11,11 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-		
+			<?php  ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
-					
+				 
 					get_template_part( 'content', get_post_format() );
 				?>
 
@@ -26,8 +29,8 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		</main>
-	</div>
+		</main> 
+	</div> 
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
